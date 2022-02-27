@@ -20,9 +20,9 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		// No word? Don't run this then please! :De
+		// No word?
 		if(!currentWord) return;
-
+		// Already won?
 		if(hasWon) return;
 		
 		// Set guess & check the letters meet.
